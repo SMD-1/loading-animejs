@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeJs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="squares" id="square1"></div>
+    <div class="squares" id="square2"></div>
+    <div class="squares" id="square3"></div>
+
+
+
+    <script src="anime.min.js"></script>
+    <script>
+        anime({
+            targets: '#square1' ,
+            translateY: -10,
+            duration: 1000,
+            easing: 'easeInOutExpo',
+            direction: 'alternate',
+            loop: true,
+        });
+        anime ({
+            targets: '#square2',
+            translateY: -10,
+            duration: 1000,
+            easing: 'easeInOutExpo',
+            direction: 'alternate',
+            loop: true,
+            delay: 200 
+        });
+        anime ({
+            targets: '#square3',
+            translateY: -10,
+            duration: 1000,
+            easing: 'easeInOutExpo',
+            direction: 'alternate',
+            loop: true,
+            delay: 400 
+        });
+    </script>
+</body>
